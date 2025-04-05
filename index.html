@@ -6,9 +6,10 @@
     <title>Omelette Recipe</title>
     <style>
         /* Global Styles */
+
+
         body {
-            font-family: Arial, sans-serif;
-            background-color: #F5EDE3;
+            background-color: #F4E6D8;
             margin: 0;
             padding: 0;
             display: flex;
@@ -21,8 +22,8 @@
             background: white;
             width: 600px;
             border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
         }
 
         .card img {
@@ -30,48 +31,51 @@
             border-radius: 10px;
         }
 
-        h1 {
-            font-size: 24px;
-            color: #333;
-        }
+	.prep-time {
+            background-color: #FFF7FC;
+            padding: 20px;
+            border-radius: 10px;
+	    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1)
+	}
 
-        p {
-            color: #666;
-        }
-
-        .prep-time {
-            background-color: #F7ECF3;
+	.nutrition {
             padding: 10px;
             border-radius: 10px;
         }
 
-        .prep-time strong {
+	.prep-time strong {
             color: #5E2B5E;
         }
 
-        h2 {
-            color: #864A2B;
+	.hr.solid {
+  	    border-top: 1px solid;
+	    border-color:#E0E0E0
+	}
+	
+        .h1 {	
+		font-family: "Youngserif-Regular", serif; 
+		src="/assets/fonts/YoungSerif"           	
+        }
+
+	h2 {
+		
+        }
+
+        p {
+		font-family: "Outfit";
+            	color: black;
         }
 
         ul, ol {
-            padding-left: 20px;
+            	padding-left: 25px;
         }
 
-        .nutrition {
-            background: #F5F5F5;
-            padding: 10px;
-            border-radius: 10px;
-        }
-
-        .nutrition strong {
-            color: #D67D3E;
-        }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <img src="omelette.jpg" alt="Omelette">
+        <img src="assets/images/image-omelette.jpeg" alt="Omelette">
         
         <h1>Simple Omelette Recipe</h1>
         <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
@@ -94,6 +98,8 @@
             <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
         </ul>
 
+	<hr class="solid">
+
         <h2>Instructions</h2>
         <ol>
             <li><strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper.</li>
@@ -104,12 +110,18 @@
             <li><strong>Enjoy:</strong> Serve hot with additional seasoning if needed.</li>
         </ol>
 
+	<hr class="solid">
+
         <h2>Nutrition</h2>
+	<p>The table below shows nutritional values per serving without the additional fillings.</p>
         <div class="nutrition">
             <p><strong>Calories:</strong> 277kcal</p>
+	    </br>	
             <p><strong>Carbs:</strong> 0g</p>
-            <p><strong>Protein:</strong> 20g</p>
-            <p><strong>Fat:</strong> 22g</p>
+            <hr class="solid">
+	    <p><strong>Protein:</strong> 20g</p>
+            <hr class="solid">
+	    <p><strong>Fat:</strong> 22g</p>
         </div>
     </div>
 
